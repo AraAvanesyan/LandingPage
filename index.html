@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel/carousel.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+
+<div class="m-message-notify">
+    <div class="color"></div>
+    <span class="text"></span>
+</div>
+<div class="m-form-wrapper">
+    <div class="m-form-layer">
+        <div class="m-form-close">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.414 191.414"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g>
+                    <path d="M107.888,96.142l80.916-80.916c3.48-3.48,3.48-8.701,0-12.181s-8.701-3.48-12.181,0L95.707,83.961L14.791,3.045   c-3.48-3.48-8.701-3.48-12.181,0s-3.48,8.701,0,12.181l80.915,80.916L2.61,177.057c-3.48,3.48-3.48,8.701,0,12.181   c1.74,1.74,5.22,1.74,6.96,1.74s5.22,0,5.22-1.74l80.916-80.916l80.916,80.916c1.74,1.74,5.22,1.74,6.96,1.74   c1.74,0,5.22,0,5.22-1.74c3.48-3.48,3.48-8.701,0-12.181L107.888,96.142z"/>
+                </g>
+            </svg>
+        </div>
+        <div class="m-circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.1 90" xml:space="preserve">
+                        <path d="M82.1,23.8H66.2l5.3-5.3C64.4,11.4,55,7.5,45,7.5c-10,0-19.4,3.9-26.5,11C11.4,25.6,7.5,35,7.5,45c0,2.1-1.7,3.8-3.8,3.8
+          S0,47.1,0,45c0-12,4.7-23.3,13.2-31.8C21.7,4.7,33,0,45,0s23.3,4.7,31.8,13.2l0,0l5.3-5.3V23.8z" />
+                        <path d="M45,82.5c2.1,0,3.8,1.7,3.8,3.8S47,90,45,90c-2.1,0-3.8-1.7-3.8-3.8S42.9,82.5,45,82.5z" />
+                        <path d="M60.8,79.4c2.1,0,3.8,1.7,3.8,3.8s-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S58.7,79.4,60.8,79.4z" />
+                        <path d="M74.2,70.4c2.1,0,3.8,1.7,3.8,3.8s-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S72.1,70.4,74.2,70.4z" />
+                        <path d="M29.2,79.4c2.1,0,3.8,1.7,3.8,3.8s-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S27.1,79.4,29.2,79.4z" />
+                        <path d="M15.8,70.4c2.1,0,3.8,1.7,3.8,3.8s-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S13.8,70.4,15.8,70.4z" />
+                        <path d="M6.9,57c2.1,0,3.8,1.7,3.8,3.8s-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S4.8,57,6.9,57z" />
+                        <path d="M67.5,54v0.8c0,3.3-1.3,6.5-3.6,8.8l0,0c-2.5,2.5-5.8,3.9-9.3,3.9l0,0c-2.3,0-4.6-0.6-6.6-1.8C38.1,60,30,51.9,24.3,42.1 c-1.2-2-1.8-4.3-1.8-6.6c0-3.5,1.4-6.8,3.9-9.3l0,0c2.3-2.3,5.5-3.6,8.8-3.6H36l4.5,12L36,39c4,5.9,9.1,11,15,15l4.5-4.5L67.5,54z" />
+                    </svg>
+        </div>
+        <div class="m-form-row">
+            <div class="group m-form1 name">
+                <input class="m-form1" id="name" type="text" required="required"/>
+                <span class="bar"></span>
+                <label>Введите имя</label>
+            </div>
+            <div class="group m-form2 phone">
+                <input class="m-form2" id="phone" type="text" required="required"/>
+                <span class="bar"></span>
+                <label>Ваш номер телефона</label>
+            </div>
+            <div class="group">
+                <button class="m-callback-button ripple" data-action="send.callback" name="budget">Перезвоните мне
+                </button>
+            </div>
+        </div>
+        <p>Мы свяжемся с вами в ближайшее время</p>
+    </div>
+</div>
+<header>
+    <nav id="header" class="navbar navbar-fixed-top">
+        <div id="header-container" class="container navbar-container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" id="brand">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#works" class="active">Портфолио</a></li>
+                    <li><a href="#stock">Акция</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Узнать, как это работает</a></li>
+                </ul>
+            </div><!-- /.nav-collapse -->
+            <div class="navbar-header navbar-right">
+                <a class="navbar-brand header-phone-number navbar-right m-button-callback" href="#">
+                    8 999 999 99 99
+                </a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    <div class="header-content font-centuryGothicRegular">
+        <h1 class="header-content-header"><span class="font-centuryGothicBold">Высокоэффективные</span><br>
+            <span class="font-centuryGothic">landing page</span></h1>
+        <div class="prises text-left ">
+            <p><span class="green-text">конверсия:</span> <span class="price">от 4% до 17%*</span></p>
+            <p><span class="green-text">стоимость:</span> <span class="price">от 1.000 руб.</span></p>
+            <p><span class="green-text">срок изготовления:</span> <span class="price">от 5 дней</span></p>
+        </div>
+        <div class="green-button-wrapper">
+            <a href="#" class="green-button">Узнать, как это работает</a>
+        </div>
+        <p class="header-content-footer-header">* Гарантия достижения результата! Вы ничем не рискуете.</p>
+    </div>
+</header>
+
+<section id="services">
+    <h1 class="header">Вам точно нужен <br>landing page, если...</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <div class="service">
+                    <div class="service-image">
+                        <img src="images/services/coins.png" alt="coins" class="img-fluid">
+                    </div>
+                    <div class="service-description">
+                        <p>Нужно привлечь новых клиентов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="service">
+                    <div class="service-image">
+                        <img src="images/services/phone.png" alt="phone" class="img-fluid">
+                    </div>
+                    <div class="service-description">
+                        <p>Не хотите терять потенциальных клиентов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="service">
+                    <div class="service-image">
+                        <img src="images/services/application.png" alt="application" class="img-fluid">
+                    </div>
+                    <div class="service-description">
+                        <p>Хотите обеспечить быстрый старт продаж</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="works">
+    <h1 class="header">Последние наши работы</h1>
+    <p class="header-description">Мы разрабатываем только индивидуальный дизайн, <br> шаблоны - это недоверие клиента и
+        низкая конверсия.</p>
+    <div id="carousel">
+        <a href="#"><img src="images/slides/slide2.png"/></a>
+        <a href="#"><img src="images/slides/slide1.png"/></a>
+        <a href="#"><img src="images/slides/slide3.png"/></a>
+    </div>
+
+</section>
+
+<section id="feedback">
+    <h1 class="header feedback-header">Отзывы наших клиентов</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feedback">
+                    <p class="feedback-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut</p>
+                    <div class="feedback-author">
+                        <img src="images/author.png" alt="author" class="author-image">
+                        <span class="author-name">AMMY WATSON</span><br>
+                        <span class="author-email">@ammy_watson</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feedback">
+                    <p class="feedback-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut</p>
+                    <div class="feedback-author">
+                        <img src="images/author.png" alt="author" class="author-image">
+                        <span class="author-name">AMMY WATSON</span><br>
+                        <span class="author-email">@ammy_watson</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feedback">
+                    <p class="feedback-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut</p>
+                    <div class="feedback-author">
+                        <img src="images/author.png" alt="author" class="author-image">
+                        <span class="author-name">AMMY WATSON</span><br>
+                        <span class="author-email">@ammy_watson</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="results" class="results">
+    <h1 class="header">Результаты в цифрах</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="details-rectangle-white">
+                    <p>www.megaplan.ru</p>
+                    <span class="green-text">CTR:</span> 14,60 %<br>
+                    <span class="green-text">Средняя цена клика:</span> 5,91 руб.<br>
+                    <span class="green-text">Конверсия:</span> 6,9 %<br>
+                    <span class="green-text">ROI:</span> 3500%<br>
+                    <span class="green-text">Стоимость клиента:</span> 800 руб.<br>
+                    <span class="green-text">Средний чек:</span> 14100 руб.<br>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="triangle-wrapper">
+                    <img src="images/results/results-image.png" alt="">
+                    <div class="details-rectangle-violet">
+                        <p>Показы: <br>5328 <br></p>
+                        <p>Кол-во кликов: <br>778 <br></p>
+                        <p>Заявок: <br>65 <br></p>
+                    </div>
+                    <div class="details-triangle">
+                        <p class="text-center">Продажи: <br>37</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section id="stock">
+    <div class="container">
+        <h1 class="stock-header text-center">Акция!</h1>
+        <p class="stock-description text-center">
+            При заказе лендинга скидка на настройку контекстной рекламы <span class="percentage">20 %</span>
+            <br>До конца акции осталось: </p>
+        <div id="timer">
+            <h1>
+                <span class="bracket">[</span>
+                <div class="time">
+                    <div id="day"></div>
+                    <div class="name">дня</div>
+                </div>
+                :
+                <div class="time">
+                    <div id="hour"></div>
+                    <div class="name">часов</div>
+                </div>
+                :
+                <div class="time">
+                    <div id="minute"></div>
+                    <div class="name">минут</div>
+                </div>
+                :
+                <div class="time">
+                    <div id="second"></div>
+                    <div class="name">секунд</div>
+                </div>
+                <span class="bracket">]</span>
+            </h1>
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+                    // Get todays date and time
+                    var now = new Date().getTime();
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    // Display the result in the element with id="timer"
+                    document.getElementById("day").innerHTML = days + "";
+                    document.getElementById("hour").innerHTML = hours + "";
+                    document.getElementById("minute").innerHTML = minutes + "";
+                    document.getElementById("second").innerHTML = seconds + "";
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("timer").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+        </div>
+        <form action="" method="post" class="text-center">
+            <div id="form">
+                <input class="input" type="text" placeholder="Ваше имя">
+                <input class="input" type="text" placeholder="Номер телефона или e-mail">
+                <input class="input-submit" type="submit" value="Оставить заявку ">
+            </div>
+        </form>
+    </div>
+</section>-->
+
+<section id="results2" class="results">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="triangle-wrapper text-right">
+                    <img src="images/results/results-image2.png" alt="">
+                    <div class="details-rectangle-violet">
+                        <p>Показы: <br>5328 <br></p>
+                        <p>Кол-во кликов: <br>778 <br></p>
+                        <p>Заявок: <br>65 <br></p>
+                    </div>
+                    <div class="details-triangle">
+                        <p class="text-center">Продажи: <br>37</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="details-rectangle-white">
+                    <p>www.всепороги.рф</p>
+                    <span class="green-text">CTR:</span> 15,30 % <br>
+                    <span class="green-text">Средняя цена клика:</span> 4,62 руб. <br>
+                    <span class="green-text">Конверсия:</span> 8,7 % <br>
+                    <span class="green-text">ROI:</span> 6000% <br>
+                    <span class="green-text">Стоимость клиента:</span> 650 руб. <br>
+                    <span class="green-text">Средний чек:</span> 12900 руб. <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="prices" class="prices">
+    <h1 class="header">Стоимость создания landing page</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="price">
+                    <h4 class="price-title">Старт</h4>
+                    <h3 class="price-price">от 1 000 руб.</h3>
+                    <p class="price-description">Хостинг и домен в ПОДАРОК!
+                        Индивидуальный дизайн.
+                        Самостоятельное управление контентом.
+                        Персональный менеджер.
+                        Анализ конкурентов и разработка тех. задания нашим опытным маркетологом.
+                        Составление УТП, триггеров и текстов профессиональным копирайтером.
+                        Установка Яндекс метрики и настройка целей.
+                        Продающая анимация, слайдеры, галереи, таймер.
+                        2-ой бонусный лендинг по новой
+                        технологии Satellite -Landing Page.
+                        Проведение А/Б-Тестов для получения максимальной результативности.
+
+                    </p>
+                    <div class="green-button-wrapper m-button-callback">
+                        <a class="green-button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="price">
+                    <h4 class="price-title">Престиж</h4>
+                    <h3 class="price-price">от 2 000 руб.</h3>
+                    <p class="price-description">
+                        Хостинг и домен в ПОДАРОК!
+                        Индивидуальный дизайн.
+                        Самостоятельное управление контентом.
+                        Персональный менеджер.
+                        Анализ конкурентов и разработка тех. задания нашим опытным маркетологом.
+                        Составление УТП, триггеров и текстов профессиональным копирайтером.
+                        Установка Яндекс метрики и настройка целей.
+                        Продающая анимация, слайдеры, галереи, таймер.
+                        2-ой бонусный лендинг по новой
+                        технологии Satellite -Landing Page.
+                        Проведение А/Б-Тестов для получения максимальной результативности.
+                    </p>
+                    <div class="green-button-wrapper m-button-callback">
+                        <a class="green-button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="price">
+                    <h4 class="price-title">Люкс</h4>
+                    <h3 class="price-price">от 3 500 руб.</h3>
+                    <p class="price-description">
+                        Хостинг и домен в ПОДАРОК!
+                        Индивидуальный дизайн.
+                        Самостоятельное управление контентом.
+                        Персональный менеджер.
+                        Анализ конкурентов и разработка тех. задания нашим опытным маркетологом.
+                        Составление УТП, триггеров и текстов профессиональным копирайтером.
+                        Установка Яндекс метрики и настройка целей.
+                        Продающая анимация, слайдеры, галереи, таймер.
+                        2-ой бонусный лендинг по новой
+                        технологии Satellite -Landing Page.
+                        Проведение А/Б-Тестов для получения максимальной результативности.
+                    </p>
+                    <div class="green-button-wrapper m-button-callback">
+                        <a class="green-button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section >
+
+<section id="prices2" class="prices">
+    <h1 class="header"><span class="font-centuryGothic">Лендинг работает эффективно только при грамотно настроенной рекламе</span>
+        <br>
+        <span class="font-centuryGothicBold">Закажите у нас настройку контекстной рекламы по спецпредложению!</span></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="price">
+                    <h4 class="price-title">Брендирование</h4>
+                    <h3 class="price-price">от 1 000 руб.</h3>
+                    <div class="green-button-wrapper m-button-callback">
+                        <a class="green-button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="price">
+                    <h4 class="price-title">Контекстная <br>
+                        реклама <span class="green-text">-20%*</span></h4>
+                    <h3 class="price-price">от 1 000 руб.</h3>
+                    <div class="green-button-wrapper m-button-callback">
+                        <a class="green-button">Заказать</a>
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;margin-top: 10px;">* При заказе landing page</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="price">
+                    <h4 class="price-title">Продающий копирайтинг <br>
+                        и e-mail маркетинг </h4>
+                    <h3 class="price-price">от 1 000 руб.</h3>
+                    <div class="green-button-wrapper m-button-callback">
+                        <a class="green-button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/smoothScroll.js"></script>
+<script type="text/javascript" src="js/stickyMenu.js"></script>
+<script type="text/javascript" src="js/popup-script.js"></script>
+<script type="text/javascript" src="js/carousel/jquery.waterwheelCarousel.min.js"></script>
+<script type="text/javascript" src="js/carousel/carousel.js"></script>
+</body>
+</html>

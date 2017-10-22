@@ -1,0 +1,265 @@
+/* FORM WINDOW */
+.m-form-wrapper input,
+.m-form-wrapper button{
+    outline: none;
+}
+.m-form-wrapper {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 1500;
+    outline: 0;
+    background-color: rgba(234, 234, 238, 0.94);
+    padding-top: 10%;
+}
+.m-form-wrapper .m-form-layer {
+    display: block;
+    margin: 0 auto;
+    z-index: 120;
+    text-align: center;
+    max-width: 475px;
+    min-height: 489px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 26px 54px rgba(141, 154, 186, 0.45);
+    -webkit-box-shadow: 0 26px 54px rgba(141, 154, 186, 0.45);
+    -moz-box-shadow: 0 26px 54px rgba(141, 154, 186, 0.45);
+    -o-box-shadow: 0 26px 54px rgba(141, 154, 186, 0.45);
+    -ms-box-shadow: 0 26px 54px rgba(141, 154, 186, 0.45);
+}
+.m-form-wrapper .m-form-layer p {
+    font-size: 15px;
+    color: #a9acb5;
+    margin-top: 34px;
+}
+.m-form-wrapper .m-form-layer .m-form-close {
+    width: 16px;
+    float: right;
+    margin-top: 18px;
+    margin-left: 441px;
+    position: absolute;
+}
+.m-form-wrapper .m-form-layer .m-form-close svg {
+    -webkit-transition: all 850ms ease;
+    -moz-transition: all 850ms ease;
+    -o-transition: all 850ms ease;
+    transition: all 850ms ease;
+    fill: #bfc0c6;
+}
+.m-form-wrapper .m-form-layer .m-form-close svg:hover {
+    cursor: pointer;
+    fill: #9d9d9e;
+}
+.m-form-wrapper .m-form-layer .m-circle {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-size: cover;
+    width: 76px;
+    height: 76px;
+    margin-top: 52px;
+    background-color: #58ca82;
+    box-shadow: 0 15px 48px rgba(88, 202, 130, 0.51);
+}
+.m-form-wrapper .m-form-layer .m-circle svg {
+    margin-top: 11px;
+    margin-right: 4px;
+    width: 50px;
+    fill: #fff;
+    padding-bottom: 40px;
+}
+.m-form-wrapper .m-form-layer .m-form-row {
+    min-width: 357px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.m-form-wrapper .m-form-layer button.m-callback-button {
+    overflow: hidden;
+    min-width: 357px;
+    margin-top: 41px;
+    border: none;
+    background-color: #5a62ff;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 23px 0 25px 0;
+    -webkit-transition: all 850ms ease;
+    -moz-transition: all 850ms ease;
+    -o-transition: all 850ms ease;
+    transition: all 850ms ease;
+    box-shadow: 0 15px 27px rgba(90, 98, 255, 0.31);
+}
+.m-form-wrapper .m-form-layer button.m-callback-button:hover {
+    background-color: #7178ff;
+    box-shadow: 0 15px 27px rgba(113, 120, 255, 0.31);
+}
+@media only screen and (max-width:505px) {
+    .m-form-wrapper {
+        padding-top: 0;
+    }
+    .m-form-wrapper .m-form-layer {
+        min-width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding-top: 20%;
+    }
+    .m-form-wrapper .m-form-layer button.m-callback-button {
+        min-width: 90%;
+        font-size: 90%;
+    }
+    .m-form-wrapper .m-form-layer .m-form-row {
+        min-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .m-form-wrapper .m-form-layer .m-form-close {
+        width: 20px;
+        top: 20px;
+        right: 20px;
+        margin-top: 0;
+        margin-left: 0px;
+    }
+}
+.m-form-wrapper .m-form-layer .m-form-row .group {
+    position: relative;
+}
+.m-form-wrapper .m-form-layer .m-form-row .group.m-form2 {
+    margin-top: 25px;
+}
+.m-form-wrapper .m-form-layer .m-form-row input {
+    background: none;
+    color: #8b9197;
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #d9dce5;
+    text-align: center;
+}
+.m-form-wrapper .m-form-layer .m-form-row input:focus ~ label, .m-form-wrapper .m-form-layer .m-form-row input:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: #5a62ff;
+}
+.m-form-wrapper .m-form-layer .m-form-row .m-form1 input:focus ~ label, .m-form-wrapper .m-form-layer .m-form-row .m-form1 input:valid ~ label {
+    left: 40.4%;
+}
+.m-form-wrapper .m-form-layer .m-form-row .m-form2 input:focus ~ label, .m-form-wrapper .m-form-layer .m-form-row .m-form2 input:valid ~ label {
+    left: 30.6%;
+}
+.m-form-wrapper .m-form-layer .m-form-row input:focus ~ .bar::before {
+    width: 100%;
+}
+.m-form-wrapper .m-form-layer .m-form-row label {
+    text-align: center;
+    color: #8b9197;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    -webkit-transition: 300ms ease all;
+    transition: 300ms ease all;
+}
+.m-form-wrapper .m-form-layer .m-form-row .m-form1 label {
+    left: 37%;
+}
+.m-form-wrapper .m-form-layer .m-form-row .m-form2 label {
+    left: 27.5%;
+}
+.m-form-wrapper .m-form-layer .m-form-row .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.m-form-wrapper .m-form-layer .m-form-row .bar::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #5A62FF;
+    -webkit-transition: 300ms ease all;
+    transition: 300ms ease all;
+    left: 0%;
+}
+.m-form-wrapper .m-form-layer .m-form-row label.error {
+    color: #e74c3c;
+}
+.m-form-wrapper .m-form-layer .m-form-row input:focus ~ label.error, .m-form-wrapper .m-form-layer .m-form-row input:valid ~ label.error {
+    color: #e74c3c;
+}
+.m-form-wrapper .m-form-layer .m-form-row .bar.error::before {
+    background: #e74c3c;
+}
+.m-form-wrapper .m-form-layer .m-form-row input.error {
+    border-bottom: 2px solid #e74c3c;
+}
+
+
+.m-callback {
+    display: block;
+    position: relative;
+}
+.m-callback button.m-button-callback {
+    border: none;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    width: 260px;
+    margin-top: 56px;
+    line-height: 54px;
+    position: relative;
+    background-color: #f0f2f4;
+    border-radius: 4px;
+    font-family: 'FSElliotPro-Heavy', sans-serif;
+    color: #59cc84;
+    font-size: 16px;
+    box-shadow: 0 9px 22px rgba(194, 204, 211, 0.19);
+    height: 56px;
+    text-transform: uppercase;
+}
+.m-callback button.m-button-callback:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 9px 22px rgba(194, 204, 211, 0.34);
+}
+.m-callback button.m-button-callback svg {
+    float: left;
+    height: 29px;
+    fill: #59cc84;
+    margin-top: 13px;
+    padding-left: 16px;
+    padding-right: 0px;
+}
+.m-callback button.m-button-callback {
+    box-shadow: none;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    margin-top: 15px;
+    background-color: rgba(242, 253, 241, 1);
+    color: #59cc84;
+}
+.m-callback button.m-button-callback svg {
+    webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    fill: #59cc84;
+}
+.m-callback button.m-button-callback:hover {
+    background-color: #81e294;
+    color: #fff;
+}
+.m-callback button.m-button-callback:hover svg {
+    fill: #fff;
+}
+
