@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carousel/carousel.css">
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/popup.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+
 </head>
 <body>
 
@@ -16,6 +17,7 @@
     <div class="color"></div>
     <span class="text"></span>
 </div>
+
 <div class="m-form-wrapper">
     <div class="m-form-layer">
         <div class="m-form-close">
@@ -58,27 +60,10 @@
         <p>Мы свяжемся с вами в ближайшее время</p>
     </div>
 </div>
+
 <header>
     <nav id="header" class="navbar navbar-fixed-top">
         <div id="header-container" class="container navbar-container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#" id="brand">
-                    <img src="images/logo.png" alt="">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#works" class="active">Портфолио</a></li>
-                    <li><a href="#stock">Акция</a></li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">Узнать, как это работает</a></li>
-                </ul>
-            </div><!-- /.nav-collapse -->
-            <div class="navbar-header navbar-right">
-                <a class="navbar-brand header-phone-number navbar-right m-button-callback" href="#">
-                    8 999 999 99 99
-                </a>
-            </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"
                     aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -86,6 +71,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" id="brand" width="30" height="30">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#works" class="active">Портфолио</a></li>
+                    <li><a href="#stock">Акция</a></li>
+                    <li><a href="#prices">Цены</a></li>
+                    <li><a href="#prices2">Как это работает</a></li>
+                </ul>
+                <div class="navbar-text navbar-right">
+                    <a class="header-phone-number m-button-callback" href="#">
+                        8 999 999 99 99
+                    </a>
+                </div>
+            </div><!-- /.nav-collapse -->
+
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
     <div class="header-content font-centuryGothicRegular">
@@ -146,10 +150,14 @@
     <h1 class="header">Последние наши работы</h1>
     <p class="header-description">Мы разрабатываем только индивидуальный дизайн, <br> шаблоны - это недоверие клиента и
         низкая конверсия.</p>
-    <div id="carousel">
-        <a href="#"><img src="images/slides/slide2.png"/></a>
-        <a href="#"><img src="images/slides/slide1.png"/></a>
-        <a href="#"><img src="images/slides/slide3.png"/></a>
+    <div class="container">
+        <div class="row">
+            <div id="carousel">
+                <a href="#"><img src="images/slides/slide2.png"/></a>
+                <a href="#"><img src="images/slides/slide1.png"/></a>
+                <a href="#"><img src="images/slides/slide3.png"/></a>
+            </div>
+        </div>
     </div>
 
 </section>
@@ -230,7 +238,7 @@
     </div>
 </section>
 
-<!--<section id="stock">
+<section id="stock">
     <div class="container">
         <h1 class="stock-header text-center">Акция!</h1>
         <p class="stock-description text-center">
@@ -291,11 +299,11 @@
             <div id="form">
                 <input class="input" type="text" placeholder="Ваше имя">
                 <input class="input" type="text" placeholder="Номер телефона или e-mail">
-                <input class="input-submit" type="submit" value="Оставить заявку ">
+                <input class="input-submit" type="submit" value="Оставить заявку">
             </div>
         </form>
     </div>
-</section>-->
+</section>
 
 <section id="results2" class="results">
     <div class="container">
@@ -444,7 +452,6 @@
 
 
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/smoothScroll.js"></script>
 <script type="text/javascript" src="js/stickyMenu.js"></script>
 <script type="text/javascript" src="js/popup-script.js"></script>

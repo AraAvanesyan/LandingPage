@@ -8,7 +8,8 @@ footer {
   padding: 30px 0; }
 
 a {
-  transition: all 0.3ms; }
+  transition: all 0.3ms;
+  color: white; }
 
 a:hover, a:active, a:focus {
   text-decoration: none; }
@@ -55,7 +56,7 @@ a:hover, a:active, a:focus {
   color: #495061;
   font-weight: bold;
   text-align: center;
-  margin: 117px 0; }
+  margin: 40px 0; }
 
 .green-text {
   color: #2fb16f; }
@@ -78,15 +79,21 @@ a:hover, a:active, a:focus {
 header {
   background-color: #3e2e5e;
   position: relative; }
-  header #header {
-    background-color: #3e2e5e; }
-    header #header a {
-      color: white; }
-  header #header-container {
-    display: flex;
-    justify-content: space-between; }
+  header .navbar .navbar-nav {
+    display: inline-block;
+    float: none; }
+  header .navbar .navbar-collapse {
+    text-align: center; }
+  header .header-phone-number {
+    font-size: 12pt; }
+  header #myNavbar ul {
+    position: relative;
+    left: 0;
+    right: 0; }
   header #brand {
     padding: 0; }
+  header .navbar {
+    background-color: #3e2e5e; }
   header .navbar-brand {
     font-size: 24px; }
   header .navbar-container {
@@ -109,7 +116,6 @@ header {
   header .navbar-toggle .icon-bar {
     background-color: white; }
   header .header-content {
-    margin-top: 90px;
     padding-top: 100px;
     text-align: center;
     color: white;
@@ -117,7 +123,7 @@ header {
     background: url("../images/stars.png") no-repeat right center;
     background-size: contain; }
     header .header-content .header-content-header {
-      font-size: 60pt;
+      font-size: 50pt;
       word-break: break-all; }
     header .header-content .header-content-footer-header {
       margin-top: 100px;
@@ -130,6 +136,9 @@ header {
       margin: 25px 0; }
       header .header-content .prises .price {
         font-size: 22.667px; }
+
+section {
+  padding: 15px; }
 
 #services .service .service-image {
   text-align: center; }
@@ -181,7 +190,7 @@ header {
 
 .results {
   font-size: 14pt;
-  padding-bottom: 150px; }
+  margin-bottom: 30px; }
   .results .details-rectangle-white {
     display: inline-block;
     padding: 5px;
@@ -270,8 +279,6 @@ header {
 #prices2 .header {
   font-size: 20pt; }
 
-.prices .header {
-  margin: 47px 0; }
 .prices .price {
   border: 2px solid #ebebeb;
   border-radius: 10px;
@@ -310,6 +317,10 @@ header {
     width: 50%; }
 
   .prices .price {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+
+  #myNavbar ul {
+    left: 100%;
+    transform: initial; } }
 
 /*# sourceMappingURL=style.css.map */
