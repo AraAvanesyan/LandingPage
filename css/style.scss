@@ -86,7 +86,7 @@ a:hover, a:active, a:focus {
 //endregion
 
 .header {
-  font-size: 50pt;
+  font-size: 45pt;
   font-family: CenturyGothicBold;
   color: rgb(73, 80, 97);
   font-weight: bold;
@@ -115,7 +115,7 @@ a:hover, a:active, a:focus {
     }
   }
 }
-
+footer,
 header {
   background-color: #3e2e5e;
   position: relative;
@@ -140,7 +140,7 @@ header {
 
   }
 
-  #brand {
+  .navbar-brand {
     padding: 0;
   }
 
@@ -348,7 +348,7 @@ section {
   color: white;
   padding: 20px 0;
   .stock-header {
-    font-size: 40px;
+    font-size: 30pt;
     font-family: "CenturyGothic";
     font-weight: bold;
   }
@@ -366,11 +366,16 @@ section {
     font-family: CenturyGothicRegular;
     color: white;
     text-align: center;
+    margin-bottom: 30px;
+    & h1{
+      justify-content: center;
+      display: flex;
+    }
     .name {
       text-transform: uppercase;
       font-size: 15pt;
     }
-    .time {
+    .time,.time > div:first-child {
       display: inline-block;
     }
     .time > div:first-child {
@@ -378,8 +383,18 @@ section {
     }
     .bracket {
       font-size: 60pt;
-      //vertical-align: top;
       color: $main-green;
+      &:first-child{
+        padding-right: 15px;
+      }
+      &:last-child{
+        padding-left: 15px;
+      }
+    }
+    div.colon{
+      display: inline-block;
+      font-size: 50pt;
+      padding: 0 15px;
     }
   }
 
@@ -411,6 +426,9 @@ section {
       background-color: $main-green;
       cursor: pointer;
       padding: 5px 35px;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -453,7 +471,21 @@ section {
     &:focus {
       transition: all .2s;
       border-color: $main-green;
+      transform: scale(1.1);
     }
+  }
+}
+
+footer{
+  .copyright{
+    color: white;
+    text-align: center;
+  }
+  .footer-menu{
+    display: inline-block;
+    position: relative;
+    left: 42%;
+    transform: translateX(-50%);
   }
 }
 
@@ -461,6 +493,10 @@ section {
   .header-phone-number,
   .navbar-brand {
     display: none;
+  }
+
+  .navbar-container{
+    padding: 0 !important;
   }
 
   #results .triangle-wrapper > img {
